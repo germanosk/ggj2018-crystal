@@ -1,0 +1,457 @@
+fileFormatVersion: 2
+guid: 0606d00906c55e848aad77b9c0faa76c
+timeCreated: 1517089345
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: spritesheet-protagonist_0
+    21300002: spritesheet-protagonist_1
+    21300004: spritesheet-protagonist_2
+    21300006: spritesheet-protagonist_3
+    21300008: spritesheet-protagonist_4
+    21300010: spritesheet-protagonist_5
+    21300012: spritesheet-protagonist_6
+    21300014: spritesheet-protagonist_7
+    21300016: spritesheet-protagonist_8
+    21300018: spritesheet-protagonist_9
+    21300020: spritesheet-protagonist_10
+    21300022: spritesheet-protagonist_11
+    21300024: spritesheet-protagonist_12
+    21300026: spritesheet-protagonist_13
+    21300028: spritesheet-protagonist_14
+    21300030: spritesheet-protagonist_15
+    21300032: spritesheet-protagonist_16
+    21300034: spritesheet-protagonist_17
+    21300036: spritesheet-protagonist_18
+    21300038: spritesheet-protagonist_19
+    21300040: spritesheet-protagonist_20
+    21300042: spritesheet-protagonist_21
+    21300044: spritesheet-protagonist_22
+    21300046: spritesheet-protagonist_23
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 500
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spritesheet-protagonist_0
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 3303
+        width: 621
+        height: 998
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet-protagonist_1
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 3309
+        width: 647
+        height: 992
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet-protagonist_2
+      rect:
+        serializedVersion: 2
+        x: 1490
+        y: 3312
+        width: 681
+        height: 989
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet-protagonist_3
+      rect:
+        serializedVersion: 2
+        x: 2163
+        y: 3309
+        width: 647
+        height: 992
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet-protagonist_4
+      rect:
+        serializedVersion: 2
+        x: 2836
+        y: 3307
+        width: 618
+        height: 994
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet-protagonist_5
+      rect:
+        serializedVersion: 2
+        x: 3474
+        y: 3303
+        width: 647
+        height: 998
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet-protagonist_6
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 2222
+        width: 673
+        height: 1005
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet-protagonist_7
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 2224
+        width: 647
+        height: 996
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet-protagonist_8
+      rect:
+        serializedVersion: 2
+        x: 1499
+        y: 2222
+        width: 620
+        height: 989
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet-protagonist_9
+      rect:
+        serializedVersion: 2
+        x: 2138
+        y: 2228
+        width: 638
+        height: 991
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet-protagonist_10
+      rect:
+        serializedVersion: 2
+        x: 2776
+        y: 2236
+        width: 673
+        height: 984
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet-protagonist_11
+      rect:
+        serializedVersion: 2
+        x: 3449
+        y: 2241
+        width: 638
+        height: 970
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet-protagonist_12
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 1140
+        width: 647
+        height: 998
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet-protagonist_13
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 1144
+        width: 618
+        height: 994
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet-protagonist_14
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 1146
+        width: 647
+        height: 992
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet-protagonist_15
+      rect:
+        serializedVersion: 2
+        x: 2189
+        y: 1149
+        width: 681
+        height: 989
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet-protagonist_16
+      rect:
+        serializedVersion: 2
+        x: 2861
+        y: 1146
+        width: 647
+        height: 992
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet-protagonist_17
+      rect:
+        serializedVersion: 2
+        x: 3526
+        y: 1140
+        width: 621
+        height: 998
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet-protagonist_18
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 78
+        width: 638
+        height: 970
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet-protagonist_19
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 73
+        width: 673
+        height: 984
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet-protagonist_20
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 65
+        width: 638
+        height: 991
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet-protagonist_21
+      rect:
+        serializedVersion: 2
+        x: 2241
+        y: 59
+        width: 620
+        height: 989
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet-protagonist_22
+      rect:
+        serializedVersion: 2
+        x: 2887
+        y: 60
+        width: 647
+        height: 997
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet-protagonist_23
+      rect:
+        serializedVersion: 2
+        x: 3534
+        y: 61
+        width: 673
+        height: 1003
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
