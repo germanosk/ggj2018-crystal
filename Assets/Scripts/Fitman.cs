@@ -4,7 +4,7 @@ using UnityEngine;
 using StronglyConnectedComponents;
 using System.Linq;
 
-public class Unicorn : MonoBehaviour
+public class Fitman : MonoBehaviour
 {
     public float speed = 6.0F;
     public float jumpSpeed = 8.0F;
@@ -13,10 +13,10 @@ public class Unicorn : MonoBehaviour
 
     public Animator animator;
 
+	public Game game;
+
     Dictionary<int,Vertex<int>> visitedVertex;
     ContactCollor lastTile;
-
-	public Game game;
 
     void Awake()
     {
@@ -25,10 +25,10 @@ public class Unicorn : MonoBehaviour
 
     void Update()
     {
-        CharacterController controller = GetComponent<CharacterController>(); 
+        CharacterController controller = GetComponent<CharacterController>();
         if (controller.isGrounded)
         {
-            moveDirection = new Vector3(Input.GetAxis("P1 Horizontal"), 0, Input.GetAxis("P1 Vertical"));
+            moveDirection = new Vector3(Input.GetAxis("P2 Horizontal"), 0, Input.GetAxis("P2 Vertical"));
             moveDirection = transform.TransformDirection(moveDirection);
             moveDirection *= speed;
 
@@ -39,15 +39,14 @@ public class Unicorn : MonoBehaviour
         controller.Move(moveDirection * Time.deltaTime);
     }
 
-	public void AddTile()
+    public void AddTile()
     {
-		game.addPoint("Player1");
-	      
+		game.addPoint("Player2");
     }
 
     public void Remove(ContactCollor tile)
     {
        // visitedVertex.Remove(tile.gameObject.GetHashCode());
-		game.removePoint("Player1");
+		game.removePoint("Player2");
     }
 }
