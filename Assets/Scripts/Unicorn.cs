@@ -14,7 +14,7 @@ public class Unicorn : MonoBehaviour
     public Animator animator;
 
     Dictionary<ContactCollor,Vertex<ContactCollor>> visitedVertex;
-    Vertex<ContactCollor> lastVertex;
+    ContactCollor lastTile;
 
     void Awake()
     {
@@ -45,17 +45,19 @@ public class Unicorn : MonoBehaviour
             visitedVertex[tile] = new Vertex<ContactCollor>(tile);
         }
         currentVertex = visitedVertex[tile];
-        if (lastVertex != null && !lastVertex.Dependencies.Contains(currentVertex))
+        if (lastTile != null && !visitedVertex[lastTile].Dependencies.Contains(currentVertex))
         {
-            currentVertex.Dependencies.Add(lastVertex);
+            currentVertex.Dependencies.Add(visitedVertex[lastTile]);
+            if(visitedVertex[lastTile].Dependencies.Count > 1)
+            {
+                Debug.Log("Dependencies Greater than 1");
+            }
         }
-        lastVertex = currentVertex;
-        //var tcd = new TarjanCycleDetectStack();
-        //var cycle_list = tcd.DetectCycle(visitedVertex);
-        if (visitedVertex.Count <3) return;
+        lastTile = tile;
+
         var detector = new StronglyConnectedComponentFinder<ContactCollor>();
         var cycles = detector.DetectCycle(visitedVertex.Values);
-        Debug.Log("Vertex visited "+visitedVertex.Count);
+
         if (cycles.Cycles().Count() > 0)
         {
             Debug.LogWarning("Cicle Found!");

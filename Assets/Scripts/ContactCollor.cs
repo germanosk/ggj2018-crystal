@@ -42,10 +42,10 @@ public class ContactCollor : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player"))
-        {
-            timeCoroutine = StartCoroutine(WaitToFade());
-        }
+        //if (other.CompareTag("Player"))
+        //{
+        //    timeCoroutine = StartCoroutine(WaitToFade());
+        //}
     }
     
     IEnumerator WaitToFade()
