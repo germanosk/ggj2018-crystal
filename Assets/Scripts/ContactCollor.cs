@@ -2,8 +2,8 @@
 using System.Collections;
 using StronglyConnectedComponents;
 
-public class ContactCollor : MonoBehaviour {
-    public Vertex<ContactCollor> vertex;
+public class ContactCollor : MonoBehaviour
+{
     public Color paintColor = Color.magenta;
     Color originalColor;
     Material material;
@@ -36,7 +36,7 @@ public class ContactCollor : MonoBehaviour {
             {
                 player = other.GetComponent<Unicorn>();
             }
-            player.AddTile(vertex);
+            player.AddTile(this);
         }
     }
 
@@ -62,7 +62,7 @@ public class ContactCollor : MonoBehaviour {
         material.color = originalColor;
         if (player != null)
         {
-            player.Remove(vertex);
+            player.Remove(this);
         }
     }
 

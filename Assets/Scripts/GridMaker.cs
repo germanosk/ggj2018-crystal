@@ -80,19 +80,19 @@ public class GridMaker : MonoBehaviour {
             {
                 gridVertex[p.x, p.y] = new Vertex<ContactCollor>(contact);
                 //gridVertex[p.x, p.y].Id = p.x + p.y+1;
-                contact.vertex = gridVertex[p.x, p.y];
+                //contact.vertex = gridVertex[p.x, p.y];
             }
         }
-        for (int i = 0; i < length; i++)
-        {
-            for (int j = 0; j < height; j++)
-            {
-                if(gridVertex[i, j] != null)
-                {
-                    AddDependencies(i, j, gridVertex[i, j]);
-                }
-            }
-        }
+        //for (int i = 0; i < length; i++)
+        //{
+        //    for (int j = 0; j < height; j++)
+        //    {
+        //        if(gridVertex[i, j] != null)
+        //        {
+        //            AddDependencies(i, j, gridVertex[i, j]);
+        //        }
+        //    }
+        //}
     }
 
     public List<GridElement> GetNeighbor(int x, int y)

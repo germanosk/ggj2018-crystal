@@ -12,11 +12,12 @@ public class Unicorn : MonoBehaviour
 
     public Animator animator;
 
-    List<Vertex<ContactCollor>> visitedVertex;
+    Dictionary<ContactCollor,Vertex<ContactCollor>> visitedVertex;
+    Vertex<ContactCollor> lastVertex;
 
     void Awake()
     {
-        visitedVertex = new List<Vertex<ContactCollor>>();
+        visitedVertex = new Dictionary<ContactCollor, Vertex<ContactCollor>>();
     }
 
     void Update()
@@ -35,17 +36,24 @@ public class Unicorn : MonoBehaviour
         controller.Move(moveDirection * Time.deltaTime);
     }
 
-    public void AddTile(Vertex<ContactCollor> tile)
+    public void AddTile(ContactCollor tile)
     {
-        if (!visitedVertex.Contains(tile))
+        Vertex<ContactCollor> currentVertex;
+        if (!visitedVertex.ContainsKey(tile))
         {
-            visitedVertex.Add(tile);
+            visitedVertex[tile] = new Vertex<ContactCollor>(tile);
         }
+        currentVertex = visitedVertex[tile];
+        if (lastVertex != null && !lastVertex.Dependencies.Contains(currentVertex))
+        {
+            currentVertex.Dependencies.Add(lastVertex);
+        }
+        lastVertex = currentVertex;
         //var tcd = new TarjanCycleDetectStack();
         //var cycle_list = tcd.DetectCycle(visitedVertex);
         if (visitedVertex.Count <3) return;
         var detector = new StronglyConnectedComponentFinder<ContactCollor>();
-        var cycles = detector.DetectCycle(visitedVertex);
+        var cycles = detector.DetectCycle(visitedVertex.Values);
         Debug.Log("Vertex visited "+visitedVertex.Count);
         if ( cycles.Count > 0)
         {
@@ -54,7 +62,7 @@ public class Unicorn : MonoBehaviour
         }
     }
 
-    public void Remove(Vertex<ContactCollor> tile)
+    public void Remove(ContactCollor tile)
     {
         visitedVertex.Remove(tile);
     }
