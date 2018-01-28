@@ -18,7 +18,7 @@ public class Game : MonoBehaviour
 
 	public Text winText;
 
-	public float timeLeft = 30.0f;
+	public float timeLeft = 15.0f;
 
 	public GameObject gameOverMenu;
 
@@ -37,20 +37,20 @@ public class Game : MonoBehaviour
 		}
 
 		timeLeft -= Time.deltaTime;
-		timer.text = "Time:" + Mathf.Round(timeLeft);
+		timer.text = "" + Mathf.Round(timeLeft);
 		if(timeLeft < 0)
 		{
 			gameOverMenu.SetActive(true);
 			Time.timeScale = 0;
 
 			if(playerOnePoints > playerTwoPoints){
-				winText.text = "Player 1 Wins!";
+				winText.text = "Jogador 1 Venceu!";
 			}else{
-				winText.text = "Player 2 Wins!";
+				winText.text = "Jogador 2 Venceu!";
 			}
 
 			if(playerOnePoints == playerTwoPoints){
-				winText.text = "Draw!";
+				winText.text = "Empate!";
 			}
 
 			//Application.LoadLevel("gameOver");
@@ -95,11 +95,11 @@ public class Game : MonoBehaviour
 	}
 
 	private void updateP1Text(){
-		pOneText.text = "ONE: " + playerOnePoints;
+		pOneText.text = "" + playerOnePoints;
 	}
 
 	private void updateP2Text(){
-		pTwoText.text = "TWO: " + playerTwoPoints;
+		pTwoText.text = "" + playerTwoPoints;
 	}
 
 	public void DoPause()
