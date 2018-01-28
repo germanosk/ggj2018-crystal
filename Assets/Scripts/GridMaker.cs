@@ -25,7 +25,6 @@ public class GridMaker : MonoBehaviour {
     void Awake()
     {
         GenerateGrid();
-        Debug.Log(grid[0, 0]);
     }
 
     /// <summary>
