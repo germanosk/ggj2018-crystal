@@ -5,6 +5,7 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Game : MonoBehaviour
 {
@@ -13,64 +14,105 @@ public class Game : MonoBehaviour
 
 	public Text pOneText;
 	public Text pTwoText;
+	public Text timer;
 
-    void Update()
-    {}
+	public Text winText;
 
-    public void NewGame()
+	float timeLeft = 5.0f;
+
+	public GameObject gameOverMenu;
+
+	private bool isPaused;	
+
+	void Update()
+	{
+
+		if (!isPaused) 
+		{
+			DoPause();
+		} 
+		else if (isPaused) 
+		{
+			UnPause ();
+		}
+
+		timeLeft -= Time.deltaTime;
+		timer.text = "Time:" + Mathf.Round(timeLeft);
+		if(timeLeft < 0)
+		{
+			gameOverMenu.SetActive(true);
+			Time.timeScale = 0;
+
+			if(playerOnePoints > playerTwoPoints){
+				winText.text = "Player 1 Wins!";
+			}else{
+				winText.text = "Player 2 Wins!";
+			}
+
+			if(playerOnePoints == playerTwoPoints){
+				winText.text = "Draw!";
+			}
+
+			//Application.LoadLevel("gameOver");
+		}
+	}
+
+	public void NewGame()
     {
 		playerOnePoints = 0;
 		playerTwoPoints = 0;
-		pOneText.text = "Happy: " + playerOnePoints;
-		pTwoText.text = "Sad: " + playerTwoPoints;
+		updateP1Text();
+		updateP2Text();
 
-        ClearPlayers();
-        RefreshPlayers();
-   
+
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex) ;
     }
 
 	public void addPoint(string tag){
-		Debug.Log("addPoint: "+tag);
 		if(tag.Equals("Player1")){
 			playerOnePoints++;
-			pOneText.text = "Happy: " + playerOnePoints;
+			updateP1Text();
 		}else if(tag.Equals("Player2")){
 			playerTwoPoints++;
-			pTwoText.text = "Sad: " + playerTwoPoints;
+			updateP2Text();
 		}
 	}
 
 	public void removePoint(string tag){
-		Debug.Log("removePoint: "+tag);
 		if(tag.Equals("Player1")){
 			playerOnePoints--;
 			if(playerOnePoints < 0){
 				playerOnePoints = 0;
 			}
-			pOneText.text = "Happy: " + playerOnePoints;
+			updateP1Text();
 		}else if(tag.Equals("Player2")){
 			playerTwoPoints--;
 			if(playerTwoPoints < 0){
 				playerTwoPoints = 0;
 			}
-			pTwoText.text = "Sad: " + playerTwoPoints;
+			updateP2Text();
 		}
 	}
 
-	private void ClearPlayers()
-    {
-        /*foreach (GameObject target in targets)
-        {
-            target.GetComponent<Target>().DisableRobot();
-        }*/
-    }
+	private void updateP1Text(){
+		pOneText.text = "ONE: " + playerOnePoints;
+	}
 
-	private void RefreshPlayers()
-    {
-      /*  foreach (GameObject target in targets)
-        {
-            target.GetComponent<Target>().RefreshTimers();
-        }*/
-    }
+	private void updateP2Text(){
+		pTwoText.text = "TWO: " + playerTwoPoints;
+	}
+
+	public void DoPause()
+	{
+		isPaused = true;
+		Time.timeScale = 0;
+	}
+
+	public void UnPause()
+	{
+		isPaused = false;
+		Time.timeScale = 1;
+	}
+
 	  
 }

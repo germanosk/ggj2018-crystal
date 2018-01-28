@@ -13,14 +13,14 @@ public class Unicorn : MonoBehaviour
 
     public Animator animator;
 
-    Dictionary<int,Vertex<int>> visitedVertex;
+   // Dictionary<int,Vertex<int>> visitedVertex;
     ContactCollor lastTile;
 
 	public Game game;
 
     void Awake()
     {
-        visitedVertex = new Dictionary<int, Vertex<int>>();
+      //  visitedVertex = new Dictionary<int, Vertex<int>>();
     }
 
     void Update()

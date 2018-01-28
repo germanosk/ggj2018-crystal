@@ -15,12 +15,12 @@ public class Fitman : MonoBehaviour
 
 	public Game game;
 
-    Dictionary<int,Vertex<int>> visitedVertex;
+    //Dictionary<int,Vertex<int>> visitedVertex;
     ContactCollor lastTile;
 
     void Awake()
     {
-        visitedVertex = new Dictionary<int, Vertex<int>>();
+     //   visitedVertex = new Dictionary<int, Vertex<int>>();
     }
 
     void Update()
