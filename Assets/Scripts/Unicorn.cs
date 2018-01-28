@@ -13,12 +13,12 @@ public class Unicorn : MonoBehaviour
 
     public Animator animator;
 
-    Dictionary<ContactCollor,Vertex<ContactCollor>> visitedVertex;
+    Dictionary<int,Vertex<int>> visitedVertex;
     ContactCollor lastTile;
 
     void Awake()
     {
-        visitedVertex = new Dictionary<ContactCollor, Vertex<ContactCollor>>();
+        visitedVertex = new Dictionary<int, Vertex<int>>();
     }
 
     void Update()
@@ -39,24 +39,34 @@ public class Unicorn : MonoBehaviour
 
     public void AddTile(ContactCollor tile)
     {
-        Vertex<ContactCollor> currentVertex;
-        if (!visitedVertex.ContainsKey(tile))
+        int currentHash = tile.GetHashCode();
+        Debug.Log("Hash: " + currentHash);
+        Vertex<int> currentVertex;
+
+        if (!visitedVertex.ContainsKey(currentHash))
         {
-            visitedVertex[tile] = new Vertex<ContactCollor>(tile);
+            visitedVertex[currentHash] = new Vertex<int>(currentHash);
         }
-        currentVertex = visitedVertex[tile];
-        if (lastTile != null && !visitedVertex[lastTile].Dependencies.Contains(currentVertex))
+        currentVertex = visitedVertex[currentHash];
+        if (lastTile != null
+            //&& !visitedVertex[lastTile.gameObject.GetHashCode()].Dependencies.Contains(currentVertex)
+            //&& !currentVertex.Dependencies.Contains(visitedVertex[lastTile.GetHashCode()])
+            )
         {
-            currentVertex.Dependencies.Add(visitedVertex[lastTile]);
-            if(visitedVertex[lastTile].Dependencies.Count > 1)
+            currentVertex.Dependencies.Add(visitedVertex[lastTile.GetHashCode()]);
+            if(visitedVertex[lastTile.GetHashCode()].Dependencies.Count > 1)
             {
                 Debug.Log("Dependencies Greater than 1");
             }
         }
         lastTile = tile;
-
-        var detector = new StronglyConnectedComponentFinder<ContactCollor>();
-        var cycles = detector.DetectCycle(visitedVertex.Values);
+        //using https://github.com/danielrbradley/CycleDetection to detect Cycle
+        var detector = new StronglyConnectedComponentFinder<int>();
+        var values = visitedVertex.Values.ToList();
+        var cycles = detector.DetectCycle(values);
+        Debug.Log("Cicles: " + cycles.Count);
+        Debug.Log("Cicle Single: " + cycles.Single().Count());
+        Debug.Log("Cicle Cycles: " + cycles.Cycles().Count());
 
         if (cycles.Cycles().Count() > 0)
         {
@@ -67,6 +77,6 @@ public class Unicorn : MonoBehaviour
 
     public void Remove(ContactCollor tile)
     {
-        visitedVertex.Remove(tile);
+        visitedVertex.Remove(tile.gameObject.GetHashCode());
     }
 }
