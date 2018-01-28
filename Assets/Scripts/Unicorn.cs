@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using StronglyConnectedComponents;
+using System.Linq;
 
 public class Unicorn : MonoBehaviour
 {
@@ -55,7 +56,7 @@ public class Unicorn : MonoBehaviour
         var detector = new StronglyConnectedComponentFinder<ContactCollor>();
         var cycles = detector.DetectCycle(visitedVertex.Values);
         Debug.Log("Vertex visited "+visitedVertex.Count);
-        if ( cycles.Count > 0)
+        if (cycles.Cycles().Count() > 0)
         {
             Debug.LogWarning("Cicle Found!");
            // Debug.Break();

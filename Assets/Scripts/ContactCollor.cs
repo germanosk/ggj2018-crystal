@@ -47,15 +47,7 @@ public class ContactCollor : MonoBehaviour
             timeCoroutine = StartCoroutine(WaitToFade());
         }
     }
-
-    void OnCollisionEnter(Collision collision)
-    {
-        if (collision.collider.CompareTag("Player"))
-        {
-            material.color = paintColor;
-        }
-    }
-
+    
     IEnumerator WaitToFade()
     {
         yield return timer;
