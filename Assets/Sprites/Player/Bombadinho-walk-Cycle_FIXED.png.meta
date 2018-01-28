@@ -1,9 +1,33 @@
 fileFormatVersion: 2
 guid: 3ce8e6362d6f0c94dadc13ef6eecc2d6
-timeCreated: 1517160632
+timeCreated: 1517167512
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Bombadinho-walk-Cycle_FIXED_0
+    21300002: Bombadinho-walk-Cycle_FIXED_1
+    21300004: Bombadinho-walk-Cycle_FIXED_2
+    21300006: Bombadinho-walk-Cycle_FIXED_3
+    21300008: Bombadinho-walk-Cycle_FIXED_4
+    21300010: Bombadinho-walk-Cycle_FIXED_5
+    21300012: Bombadinho-walk-Cycle_FIXED_6
+    21300014: Bombadinho-walk-Cycle_FIXED_7
+    21300016: Bombadinho-walk-Cycle_FIXED_8
+    21300018: Bombadinho-walk-Cycle_FIXED_9
+    21300020: Bombadinho-walk-Cycle_FIXED_10
+    21300022: Bombadinho-walk-Cycle_FIXED_11
+    21300024: Bombadinho-walk-Cycle_FIXED_12
+    21300026: Bombadinho-walk-Cycle_FIXED_13
+    21300028: Bombadinho-walk-Cycle_FIXED_14
+    21300030: Bombadinho-walk-Cycle_FIXED_15
+    21300032: Bombadinho-walk-Cycle_FIXED_16
+    21300034: Bombadinho-walk-Cycle_FIXED_17
+    21300036: Bombadinho-walk-Cycle_FIXED_18
+    21300038: Bombadinho-walk-Cycle_FIXED_19
+    21300040: Bombadinho-walk-Cycle_FIXED_20
+    21300042: Bombadinho-walk-Cycle_FIXED_21
+    21300044: Bombadinho-walk-Cycle_FIXED_22
+    21300046: Bombadinho-walk-Cycle_FIXED_23
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -40,13 +64,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 500
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -66,9 +90,375 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Bombadinho-walk-Cycle_FIXED_0
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 3321
+        width: 755
+        height: 948
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bombadinho-walk-Cycle_FIXED_1
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 3321
+        width: 682
+        height: 868
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bombadinho-walk-Cycle_FIXED_2
+      rect:
+        serializedVersion: 2
+        x: 1982
+        y: 3321
+        width: 612
+        height: 852
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bombadinho-walk-Cycle_FIXED_3
+      rect:
+        serializedVersion: 2
+        x: 2983
+        y: 3321
+        width: 462
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bombadinho-walk-Cycle_FIXED_4
+      rect:
+        serializedVersion: 2
+        x: 3932
+        y: 3321
+        width: 419
+        height: 857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bombadinho-walk-Cycle_FIXED_5
+      rect:
+        serializedVersion: 2
+        x: 4843
+        y: 3321
+        width: 450
+        height: 849
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bombadinho-walk-Cycle_FIXED_6
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 2242
+        width: 424
+        height: 864
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bombadinho-walk-Cycle_FIXED_7
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 2242
+        width: 768
+        height: 929
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bombadinho-walk-Cycle_FIXED_8
+      rect:
+        serializedVersion: 2
+        x: 1954
+        y: 2242
+        width: 667
+        height: 881
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bombadinho-walk-Cycle_FIXED_9
+      rect:
+        serializedVersion: 2
+        x: 2978
+        y: 2242
+        width: 473
+        height: 883
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bombadinho-walk-Cycle_FIXED_10
+      rect:
+        serializedVersion: 2
+        x: 3838
+        y: 2242
+        width: 604
+        height: 891
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bombadinho-walk-Cycle_FIXED_11
+      rect:
+        serializedVersion: 2
+        x: 4684
+        y: 2242
+        width: 768
+        height: 929
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bombadinho-walk-Cycle_FIXED_12
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 1143
+        width: 449
+        height: 849
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bombadinho-walk-Cycle_FIXED_13
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 1143
+        width: 421
+        height: 857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bombadinho-walk-Cycle_FIXED_14
+      rect:
+        serializedVersion: 2
+        x: 2062
+        y: 1143
+        width: 462
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bombadinho-walk-Cycle_FIXED_15
+      rect:
+        serializedVersion: 2
+        x: 2914
+        y: 1143
+        width: 612
+        height: 851
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bombadinho-walk-Cycle_FIXED_16
+      rect:
+        serializedVersion: 2
+        x: 3805
+        y: 1143
+        width: 683
+        height: 868
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bombadinho-walk-Cycle_FIXED_17
+      rect:
+        serializedVersion: 2
+        x: 4695
+        y: 1143
+        width: 757
+        height: 948
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bombadinho-walk-Cycle_FIXED_18
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 63
+        width: 765
+        height: 929
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bombadinho-walk-Cycle_FIXED_19
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 63
+        width: 605
+        height: 892
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bombadinho-walk-Cycle_FIXED_20
+      rect:
+        serializedVersion: 2
+        x: 2057
+        y: 63
+        width: 472
+        height: 884
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bombadinho-walk-Cycle_FIXED_21
+      rect:
+        serializedVersion: 2
+        x: 2887
+        y: 63
+        width: 666
+        height: 881
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bombadinho-walk-Cycle_FIXED_22
+      rect:
+        serializedVersion: 2
+        x: 3763
+        y: 63
+        width: 768
+        height: 929
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bombadinho-walk-Cycle_FIXED_23
+      rect:
+        serializedVersion: 2
+        x: 4862
+        y: 63
+        width: 424
+        height: 865
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
     physicsShape: []
   spritePackingTag: 

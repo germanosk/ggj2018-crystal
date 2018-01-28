@@ -18,7 +18,7 @@ public class Game : MonoBehaviour
 
 	public Text winText;
 
-	float timeLeft = 5.0f;
+	public float timeLeft = 30.0f;
 
 	public GameObject gameOverMenu;
 
