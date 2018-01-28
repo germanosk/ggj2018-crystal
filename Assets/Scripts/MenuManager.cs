@@ -35,7 +35,7 @@ public class MenuManager : MonoBehaviour {
 
 	public void showMenu(){
 		//current = "menu";
-		mainMenu.SetActive (true);
+		//mainMenu.SetActive (true);
 		creditsMenu.SetActive (false);
 	}
 }
